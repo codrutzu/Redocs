@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: docs_first_approach_production
-  username: docs_first_approach
-  password: <%= ENV["DOCS_FIRST_APPROACH_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
