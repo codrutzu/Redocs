@@ -28,7 +28,6 @@ gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
 # gem "rack-cors"
 
 gem 'alba', '~> 3.0.0'
-gem "skooma", "~> 0.1.0"
 gem 'rswag', '~> 2.10', '>= 2.10.1'
 
 group :development, :test do
