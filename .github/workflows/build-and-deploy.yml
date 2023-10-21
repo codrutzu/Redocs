@@ -11,13 +11,10 @@ jobs:
       - name: 'Checkout GitHub Action'
         uses: actions/checkout@v3
 
-      - name: Install Redoc cli
-        run: |
-          npm install
-          npm i -g @redocly/cli@latest
-
-      - name: Generate docs
-        run: redocly build-docs docs/openapi.yml --output=docs.html
+      - name: redoc-cli test
+        uses: seeebiii/redoc-cli-github-action@v10
+        with:
+          args: 'bundle docs/openapi.yml -o docs.html'
 
       - name: Deploy to production
         uses: johnbeynon/render-deploy-action@v0.0.8
