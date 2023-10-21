@@ -1,7 +1,6 @@
 databases:
-  - name: postgres
+  - name: docs_first_approach_production
     ipAllowList: []
-    databaseName: docs_first_approach_production
     user: admin
     plan: free
 
